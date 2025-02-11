@@ -15,9 +15,9 @@ message("telephone", 11)
 message("price", 5)
 message("number", "number")
 
-mess = gibMess()
+# mess = gibMess()
 
-print(mess)
+# print(mess)
 
 print('\n=== Positional Parameters ===\n')
 # Parametrized Functions, Extra Details. Such as Default Value
@@ -87,6 +87,49 @@ def strange_list_fun(n):
 
 print(strange_list_fun(5))
 
+print('\n=== Global Keyword ===\n')
+
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+print('\n=== Function and Argument Interactions ===\n')
+
+def my_function(n):
+    print("I got", n)
+    n += 1 
+    ''' A function should only change a variable if it returns its value.'''
+    print("I have", n)
+
+var = 1
+my_function(var)
+print(var)
+
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
+
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    del my_list_1[0]  # Pay attention to this line.
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
 
 
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
 

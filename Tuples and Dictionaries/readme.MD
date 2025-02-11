@@ -1,0 +1,2 @@
+Codes referring to Module 4 of the Netacad Course Python Fundamentals, Section 6: Tuples and Dictionaries.
+Códigos referentes ao módulo 4 do curso do Netacad Fundamentos do Python, Seção 6: Tuplas e Dicionários.
