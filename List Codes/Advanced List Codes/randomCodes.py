@@ -60,8 +60,9 @@ Now it's time to determine the monthly average noon temperature.
 Add up all 31 readings recorded at noon and divide the sum by 31. 
 You can assume that the midnight temperature is stored first.
 '''
+from random import randrange
 
-temps = [[0.0 for h in range(24)] for d in range(31)]
+temps = [[randrange(30) for h in range(24)] for d in range(31)]
 #
 # The matrix is magically updated here.
 #
@@ -104,7 +105,8 @@ Step two ‒ calm analysis of the situation. Summarize the available information
 rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
 
 '''
-The first index (0 through 2) selects one of the buildings; the second (0 through 14) selects the floor, the third (0 through 19) selects the room number. All rooms are initially free.
+The first index (0 through 2) selects one of the buildings; the second (0 through 14) selects the floor, the third (0 through 19) selects the room number. 
+All rooms are initially free.
 
 
 '''
