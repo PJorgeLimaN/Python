@@ -27,4 +27,5 @@ Code to draw a random Number:
 
 from random import randrange
 
-for i in range(10):    print(randrange(8))
+for i in range(10):    
+    print(randrange(8))

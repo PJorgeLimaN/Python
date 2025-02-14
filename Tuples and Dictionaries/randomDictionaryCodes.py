@@ -33,9 +33,11 @@ for word in words:
     else:
         print(word, "is not in dictionary") 
 
+print("=== Key ===")
 for key in sorted(dictionary.keys()):
     print(key, "->", dictionary[key])
 
+print("=== Items ===")
 for english, french in dictionary.items(): # Returns Keys and Values
     print(english, "->", french) 
 
