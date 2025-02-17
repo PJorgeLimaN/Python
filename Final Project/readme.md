@@ -1,4 +1,6 @@
 Project: Tic-Tac-Toe
+PS: ciscoCode.py is the sample solution from Cisco's Course for comparison.(ciscoCode.py é a solução de amostra do curso da cisco para comparação.)
+ticTacToe.py is my code.(ticTacToe.py é o meu código.)
 
 Scenario
 
