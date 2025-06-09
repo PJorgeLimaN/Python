@@ -47,7 +47,7 @@ dictionary.update({"duck": "canard"}) #Adding items to Dictionaries 2
 del dictionary['dog']  # Removing from Dictionaries (Specify the Key, and it removes Key AND Value)
 
 dictionary.popitem() # Removes the last item in the dictionary, In older versions, removes a random item.
-
+print("=== Values ===")
 for french in dictionary.values():
     print(french) 
 

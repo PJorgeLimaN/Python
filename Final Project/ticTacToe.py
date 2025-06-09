@@ -54,7 +54,7 @@ def freeFieldList(board): # Tornarei em um dicion√°rio futuramente para ver se √
         for col in range(3):
             if board[row][col] == '_':
                 freeSquare.append((row, col))
-    return freeSquare
+    return freeSquare 
     
     # The function browses the board and builds a list of all the free squares; 
     # the list consists of tuples, while each tuple is a pair of row and column numbers.
